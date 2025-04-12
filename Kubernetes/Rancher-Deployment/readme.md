@@ -1,4 +1,4 @@
-<img src="https://ranchermanager.docs.rancher.com/img/rancher-logo-horiz-color.svg" width="150" height="150">
+<!--<img src="https://ranchermanager.docs.rancher.com/img/rancher-logo-horiz-color.svg" width="150" height="150">-->
 
 # Install Rancher in 3 different ways
 > Rancher is a Kubernetes management tool to deploy and run clusters anywhere and on any provider.
