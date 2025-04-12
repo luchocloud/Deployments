@@ -2,7 +2,7 @@
 
 RKE2 is a Kubernetes distribution designed for security, performance, and ease of use.
 
-> This guide is a straightforward and hands-on walkthrough based on my own experience setting up Rancher for a home lab testing environment. I put it together to make things easier for anyone going down the same path and hopefully help you dodge some of the headaches and troubleshooting I ran into.
+> This guide is a straightforward and hands-on walkthrough based on my own experience setting up RKE2 for a home lab environment. I put it together to make things easier for myself and anyone going down the same path and hopefully help you dodge some of the headaches and troubleshooting I ran into.
 
 ## Server Node Installation ([Official Docs](https://docs.rke2.io/install/quickstart))
 
@@ -64,26 +64,3 @@ systemctl start rke2-agent.service
 kubectl get pods
 journalctl -u rke2-agent -f
 ```
-
-
-
-
-
-
-Provision a single Linux host to launch your Rancher server.
-- **Choose an SSL Option and Install Rancher**
-
-Run the following command for a default installation with Rancher-generated Self-signed Certificate
-```
-docker run -d --restart=unless-stopped \
-  -p 80:80 -p 443:443 \
-  --privileged \
-  rancher/rancher:latest
-```
-- Check the status of the installation with the following command: 
-
-```
-docker logs -f *containername*
-```
-
-![image](./screenshots/image.png)

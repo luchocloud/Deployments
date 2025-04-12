@@ -3,6 +3,8 @@
 # Simple K3s Deployment for Homelab
 K3s is one of the best solutions I've found for easily deploying a lightweight Kubernetes cluster.
 
+>This guide is a simple, practical walkthrough based on my own experience setting up K3s for a home lab environment. I wrote it to help myself and others get up and running faster and hopefully avoid some of the hiccups and troubleshooting I faced along the way.
+
 Read the Docs for [K3s](https://k3s.io/)!
 
 ## Requisites 
