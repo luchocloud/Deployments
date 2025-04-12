@@ -7,7 +7,7 @@
 - **Provision Linux Host**
 
 Provision a single Linux host to launch your Rancher server.
-- **Provision Linux Host**
+- **Choose an SSL Option**
 
 Run the following command for a default installation with Rancher-generated Self-signed Certificate
 ```
