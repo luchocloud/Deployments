@@ -24,4 +24,6 @@ docker logs -f *containername*
 
 ![image](./screenshots/image.png)
 
+- Go to the browser and paste the IP address. Reset the admin password and you're ready to go. 
+
 ## Option 2: Install Rancher on RKE2 ([Official Docs](https://ranchermanager.docs.rancher.com/getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker))

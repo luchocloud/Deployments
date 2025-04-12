@@ -1,4 +1,4 @@
-<img src="https://k3s.io/img/k3s-logo-light.svg" width="150" height="150">
+<!--<img src="https://k3s.io/img/k3s-logo-light.svg" width="150" height="150">-->
 
 # Simple K3s Deployment for Homelab
 K3s is one of the best solutions I've found for easily deploying a lightweight Kubernetes cluster.
