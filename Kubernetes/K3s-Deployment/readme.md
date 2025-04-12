@@ -29,8 +29,9 @@ Execute this command in each of the nodes
 ```
 curl -sfL https://get.k3s.io | K3S_TOKEN="YOURTOKEN" K3S_URL="https://[your server]:6443" K3S_NODE_NAME="servername" sh - 
 ```
+> Delete the "" on the script
 
-> Replace **YOURTOKEN** for the one provided in the previous command and **[your server]** by the Master Node IP address. Finally replace **servername**
+> Replace **YOURTOKEN** for the one provided in the previous command and **[your server]** by the Master Node IP address. Finally replace **servername**. 
 
 ### If everything works as expected you should see something like this: 
 
