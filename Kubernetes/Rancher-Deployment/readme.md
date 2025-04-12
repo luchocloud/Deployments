@@ -63,7 +63,7 @@ helm repo update
 ```
 helm install rancher rancher-latest/rancher --namespace cattle-system --create-namespace --set hostname=rancher.example.com --set replicas=1 --set bootstrapPassword=<pass>
 ```
-> In this case *rancher.exmple.com* should be replaced with the acuatl hostname or IP address and *boostrapPassword* should be replaced by the desire one.
+> In this case *rancher.exmple.com* should be replaced with the actual hostname or IP address and *boostrapPassword* should be replaced by the desire one.
 
 - In case the bootstrapPassword is not set, is possible to retrieve it using the following command: 
 
