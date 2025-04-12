@@ -22,6 +22,5 @@ docker run -d --restart=unless-stopped \
 docker logs -f *containername*
 ```
 
-![image](./screenshots/image.png)
 
 ## Option 2: Rancher on a Single Node Using Docker ([Official Docs](https://ranchermanager.docs.rancher.com/getting-started/installation-and-upgrade/other-installation-methods/rancher-on-a-single-node-with-docker))
