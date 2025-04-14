@@ -35,7 +35,7 @@ docker-compose up -d
 ```
 5. Once the **docker-compose** is finished you'll be ready to access the Wazuh Dashboard.
 
-> Access localhost on https:/127.0.0.1
+> Access localhost on the web browser
 
 > The default username and password for the Wazuh dashboard are **admin** and **SecretPassword**
 
