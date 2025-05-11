@@ -42,3 +42,12 @@ curl -sfL https://get.k3s.io | K3S_TOKEN="YOURTOKEN" K3S_URL="https://[your serv
 ### If everything works as expected you should see something like this: 
 
 <img src="https://i.ibb.co/BV6C8gJH/Screenshot-from-2025-04-09-20-40-54.png" alt="Screenshot-from-2025-04-09-20-40-54" border="0">
+
+## - Uninstall K3s server (control plane)
+```bash
+sudo /usr/local/bin/k3s-uninstall.sh
+```
+## - Uninstall K3s Agents (worker)
+```bash
+sudo /usr/local/bin/k3s-agent-uninstall.sh
+```
