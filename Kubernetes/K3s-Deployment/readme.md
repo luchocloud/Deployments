@@ -13,7 +13,12 @@ In this case I used 3 virtual machines and called them:
 - Worker-One (Agent - Worker Node One)
 - Worker-Two (Agent - Worker Node Two)
 
-## - Step One: K3s Install
+## - Step One: Export environment variable
+```bash
+export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+export PATH=$PATH:/usr/local/bin
+```
+## - Step Two: K3s Install
 > Note: Root privilege is needed to setup and configuration.
 
 Install K3s (On the Master node) 
@@ -24,12 +29,6 @@ Get the node token from the Master Node
 ```
 sudo cat /var/lib/rancher/k3s/server/node-token
 ```
-## - Step Two: Export environment variable
-```bash
-export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
-export PATH=$PATH:/usr/local/bin
-```
-
 ## - Step Three: K3s Install (Nodes)
 Execute this command in each of the nodes
 ```bash
