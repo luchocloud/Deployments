@@ -17,16 +17,22 @@ In this case I used 3 virtual machines and called them:
 > Note: Root privilege is needed to setup and configuration.
 
 Install K3s (On the Master node) 
-```
+```bash
 curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s -
 ```
 Get the node token from the Master Node
 ```
 sudo cat /var/lib/rancher/k3s/server/node-token
 ```
-## - Step Two: K3s Install (Nodes)
-Execute this command in each of the nodes
+## - Step Two: Export environment variable
+```bash
+export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+export PATH=$PATH:/usr/local/bin
 ```
+
+## - Step Three: K3s Install (Nodes)
+Execute this command in each of the nodes
+```bash
 curl -sfL https://get.k3s.io | K3S_TOKEN="YOURTOKEN" K3S_URL="https://[your server]:6443" K3S_NODE_NAME="servername" sh - 
 ```
 > Delete the "" on the script
